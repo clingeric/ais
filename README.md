@@ -8,7 +8,45 @@ AIS SCLC 2019: Intro To Ethical Hacking Workshop
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Kali Linux](https://www.offensive-security.com/kali-linux-vm-vmware-virtualbox-image-download/) (*available for VirtualBox and VMWare*)
 
-## 1 
-*Password Cracking with Hashcat*
-* [Download LinkedIn password hash list]()
+## 1
+*Install Kali Linux*
 
+In VirtualBox, go to “File” > “Import Appliance”, then browse to the `.ova` file downloaded in the previous step.
+
+After the virtual machine imports, select the Kali VM and click the settings icon:
+
+Under the system pane, set these Memory” to 8192 MB if you have 12 or more gigabytes of RAM on your laptop. If you have 8 GB of RAM on your laptop, set the “Base memory” to 4096 MB.
+
+Boot up Kali and log in
+
+Username: `root`
+Password: `toor`
+
+You can now delete the “.ova” file if you’re low on disk space.
+
+Assure you have the RockYou password list
+
+```shell
+cd cd /usr/share/wordlists
+```
+
+You should see `rockyou.txt`
+
+If you see `rockyou.txt.gz`, unzip it first with `gunzip rockyou.txt.gz`
+
+## 2 
+*Password Cracking with Hashcat*
+
+Return to the home directory
+
+```shell
+cd
+```
+
+Download the [LinkedIn password hash list]() into this home directory
+
+Run `hashcat` using the list of LinkedIn password hashes and the RockYou password list
+
+```shell
+hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt password_hashes.txt /usr/share/wordlists/rockyou.txt
+```
