@@ -45,8 +45,48 @@ cd
 
 Download the [LinkedIn password hash list]() into your home directory
 
+Check the file to see how many password hashes there are
+
+```shell
+wc -l password_hashes.txt
+```
+
+*There should be 286*
+
 Run `hashcat` using the list of LinkedIn password hashes and the RockYou password list
 
 ```shell
 hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt password_hashes.txt /usr/share/wordlists/rockyou.txt
 ```
+
+Hashcat will run for a few minutes.
+
+Press `S` to check the progress of the cracking
+
+It's important to note that the `hashcat` command uses the `--remove` flag to remove hashes from the hash list when it is cracked
+
+Once done, check the number of hashes are remaining
+
+```shell
+wc -l password_hashes.txt
+```
+
+*There should be ???*
+
+Next, open the `LinkedIn_cracked.txt` file to see the results of the password cracking
+
+```shell
+nano LinkedIn_cracked.txt
+```
+
+*The cracked password is found after the : on each line*
+
+## 3
+
+*SQL Injection*
+
+## 4
+
+*Social Engineering with the Social Engineering Toolkit (SET)*
+
+
