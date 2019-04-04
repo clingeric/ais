@@ -43,7 +43,7 @@ Return to the home directory
 cd
 ```
 
-Download the [LinkedIn password hash list]() into this home directory
+Download the [LinkedIn password hash list]() into your home directory
 
 Run `hashcat` using the list of LinkedIn password hashes and the RockYou password list
 
