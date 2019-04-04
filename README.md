@@ -27,7 +27,7 @@ You can now delete the “.ova” file if you’re low on disk space.
 Assure you have the RockYou password list
 
 ```shell
-cd cd /usr/share/wordlists
+cd /usr/share/wordlists
 ```
 
 You should see `rockyou.txt`
