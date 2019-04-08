@@ -89,4 +89,29 @@ nano LinkedIn_cracked.txt
 
 *Social Engineering with the Social Engineering Toolkit (SET)*
 
+Navigate to the `/opt/set` directory of Kali Linux
+
+```shell
+cd /opt/set
+```
+
+Run the Social Engineering Toolkit
+
+```shell
+./setoolkit
+```
+
+Select option 1 for `Social-Engineering Attacks`
+
+Select option 2 for `Website Attack Vectors`
+
+Select option 3 for `Credential Harvester Attack Method`
+
+Select option 2 for `Site Cloner`
+
+After you've selected this feature, you'll need to set an IP address to host the cloned site. Set `IP address for the POST back in Harvester/Tabnapping` to the IP address (previously configured in bridged mode of Kali Linux
+
+Set the cloned website to `http://www.facebook.com` (enter the *full* URL including `http://`)
+
+*When SET asks you about Apache, enable it to start the webserver.
 
