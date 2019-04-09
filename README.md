@@ -83,10 +83,6 @@ nano LinkedIn_cracked.txt
 
 ## 3
 
-*SQL Injection*
-
-## 4
-
 *Social Engineering with the Social Engineering Toolkit (SET)*
 
 Navigate to the `/opt/set` directory of Kali Linux
