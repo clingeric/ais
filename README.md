@@ -43,7 +43,7 @@ Return to the home directory
 cd
 ```
 
-Download the [LinkedIn password hash list]() into your home directory
+Download the [LinkedIn password hash list](https://raw.githubusercontent.com/clingeric/ais/master/passwords.txt) into your home directory
 
 Check the file to see how many password hashes there are
 
