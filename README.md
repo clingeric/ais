@@ -51,7 +51,7 @@ Check the file to see how many password hashes there are
 wc -l passwords.txt
 ```
 
-*There should be 128689*
+*There should be 282093*
 
 Run `hashcat` using the list of LinkedIn password hashes and the RockYou password list
 
@@ -68,10 +68,10 @@ It's important to note that the `hashcat` command uses the `--remove` flag to re
 Once done, check the number of hashes are remaining
 
 ```shell
-wc -l password_hashes.txt
+wc -l passwords.txt
 ```
 
-*There should be ???*
+*There should be 193622*
 
 Next, open the `LinkedIn_cracked.txt` file to see the results of the password cracking
 
@@ -84,8 +84,14 @@ nano LinkedIn_cracked.txt
 Let's try the same wordlist with the [best64](https://github.com/hashcat/hashcat/blob/master/rules/best64.rule) rule. This rule appends common numbers at the end of passwords and performs other simple permutations.
 
 ```shell
-hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt LinkedIn_HalfMillionHashes.txt -r /usr/share/hashcat/rules/best64.rule /usr/share/wordlists/rockyou.txt
+hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt passwords.txt -r /usr/share/hashcat/rules/best64.rule /usr/share/wordlists/rockyou.txt
 ```
+
+```shell
+wc -l passwords.txt
+```
+
+*There should be 144860*
 
 ## 3
 
