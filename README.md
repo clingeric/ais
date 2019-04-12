@@ -48,15 +48,15 @@ Download the [LinkedIn password hash list](https://raw.githubusercontent.com/cli
 Check the file to see how many password hashes there are
 
 ```shell
-wc -l password_hashes.txt
+wc -l passwords.txt
 ```
 
-*There should be 286*
+*There should be 186*
 
 Run `hashcat` using the list of LinkedIn password hashes and the RockYou password list
 
 ```shell
-hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt password_hashes.txt /usr/share/wordlists/rockyou.txt
+hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt passwords.txt /usr/share/wordlists/rockyou.txt
 ```
 
 Hashcat will run for a few minutes.
