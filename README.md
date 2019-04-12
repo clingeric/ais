@@ -123,3 +123,18 @@ Set the cloned website to `http://www.facebook.com` (enter the *full* URL includ
 
 *When SET asks you about Apache, enable it to start the webserver.
 
+## 4
+*Extras*
+
+SQLi Demo:
+https://www.hacksplaining.com/exercises/sql-injection#/start
+
+SQLi Cheat Sheet:
+https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/
+
+SQLi Prevention Cheat Sheet 1:
+https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.md
+
+SQLi Prevention Cheat Sheet 2:
+https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Query_Parameterization_Cheat_Sheet.md
+
