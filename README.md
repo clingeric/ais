@@ -81,6 +81,12 @@ nano LinkedIn_cracked.txt
 
 *The cracked password is found after the : on each line*
 
+Let's try the same wordlist with the best64 rule. This rule appends common numbers at the end of passwords and performs other similar switches.
+
+```shell
+hashcat --force -m 100 --potfile-disable --remove --outfile=LinkedIn_cracked.txt LinkedIn_HalfMillionHashes.txt -r /usr/share/hashcat/rules/best64.rule /usr/share/wordlists/rockyou.txt
+```
+
 ## 3
 
 *Social Engineering with the Social Engineering Toolkit (SET)*
