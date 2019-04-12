@@ -124,7 +124,7 @@ Set the cloned website to `http://www.facebook.com` (enter the *full* URL includ
 *When SET asks you about Apache, enable it to start the webserver.
 
 ## 4
-*Extras*
+*SQL Injection*
 
 SQLi Demo:
 https://www.hacksplaining.com/exercises/sql-injection#/start
@@ -137,4 +137,17 @@ https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/SQL_Injection_
 
 SQLi Prevention Cheat Sheet 2:
 https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Query_Parameterization_Cheat_Sheet.md
+
+## 5
+*Tools to Learn*
+
+[OWASP Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
+
+[Burpsuite](https://www.pentestgeek.com/web-applications/burp-suite-tutorial-1)
+
+[Metasploit](https://www.offensive-security.com/metasploit-unleashed/)
+
+[Nessus](https://sectools.org/tool/nessus/)
+
+
 
