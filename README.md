@@ -51,7 +51,7 @@ Check the file to see how many password hashes there are
 wc -l passwords.txt
 ```
 
-*There should be 1460*
+*There should be 128689*
 
 Run `hashcat` using the list of LinkedIn password hashes and the RockYou password list
 
