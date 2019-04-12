@@ -97,17 +97,9 @@ wc -l passwords.txt
 
 *Social Engineering with the Social Engineering Toolkit (SET)*
 
-Navigate to the `/opt/set` directory of Kali Linux
+Search for the Social Engineering Toolkit under the Kali applications list.
 
-```shell
-cd /opt/set
-```
-
-Run the Social Engineering Toolkit
-
-```shell
-./setoolkit
-```
+Run the application
 
 Select option 1 for `Social-Engineering Attacks`
 
@@ -117,11 +109,17 @@ Select option 3 for `Credential Harvester Attack Method`
 
 Select option 2 for `Site Cloner`
 
-After you've selected this feature, you'll need to set an IP address to host the cloned site. Set `IP address for the POST back in Harvester/Tabnapping` to the IP address (previously configured in bridged mode of Kali Linux
+After you've selected this feature, you'll need to set an IP address to host the cloned site. Set `IP address for the POST back in Harvester/Tabnapping` to your IP address (if you installed the image of Kali from the provided link, you should only have to hit enter).
 
 Set the cloned website to `http://www.facebook.com` (enter the *full* URL including `http://`)
 
-*When SET asks you about Apache, enable it to start the webserver.
+Hit enter when it asks if you know what you're doing
+
+Open your web browser to the IP address you entered previously or `127.0.0.1`.
+
+Enter some fake credentials into the fields.
+
+Go back to the open Social Engineering Toolkit to see your fake credentials.
 
 ## 4
 *SQL Injection*
